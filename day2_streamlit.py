@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-os.environ["HUGGINGFACE_API_TOKEN"] = os.getenv("HUGGINGFACE_API_TOKEN")
+os.environ["HUGGINGFACE_API_TOKEN"] = st.secrets("HUGGINGFACE_API_TOKEN")
 st.title("My Gen-AI App")
 repo_id = "microsoft/Phi-3-mini-4k-instruct"
 temp = 1
